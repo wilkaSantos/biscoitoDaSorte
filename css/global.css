@@ -1,0 +1,32 @@
+@import './index.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+    --ff-title: 'Montserrat', sans-serif;
+    --ff-sub-title: 'DM Sans', sans-serif;
+    --ff-txt-cookie: 'Dancing Script', cursive;
+
+    --fc-title: #34355B;
+
+    --bg-base-popUp: #fff;
+    --bg-button: #FF9500;
+}
+
+.disable{
+    display: none;
+}
+
+.disableOpacity{
+    opacity: 1;
+}

@@ -1,0 +1,145 @@
+
+.page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    width: 42.8rem;
+    max-height: 49rem;
+    padding: 2rem 0;
+    background-color: var( --bg-base-popUp);
+
+    opacity: 0.8;
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* = = = =    = = = = */
+
+.wrappedCookie{
+    width: 30rem;
+    height: 31.2rem;
+
+    text-align: center;
+    color: var(--fc-title);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+    .cookieTitle{
+        font-family: var(--ff-title);
+        width: 25.8rem;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+    
+    }
+
+    .txt-openCookie{
+        font-family: var(--ff-sub-title);
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+    }
+
+    .cookie{
+        width:  25rem;
+        height: 20rem;
+        margin-top: 1.4rem;
+    }
+    
+    .cookie:hover{
+        animation: cookieScales .4s infinite linear;
+    }
+
+
+/* = = = =    = = = = */
+
+.wrappedLuck{
+    width: 30rem;
+    background-color: var( --bg-base-popUp);
+    text-align: center;
+
+    margin: 2rem 0;
+}
+
+    .openCookieTitle{
+        font-family: var(--ff-title);
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        color: var(--fc-title);
+    }
+
+    .luckyMessage{
+        margin-top: 1.7rem;
+        background: #E4EDF1;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+        padding: 1rem;
+
+        font-family: var(--ff-txt-cookie);
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        text-align: center;
+
+        animation: showMessage 3s linear .5s backwards;
+    }
+
+    .openCookie{
+        margin-top: 4rem;
+        width: 30rem;
+        height: 11.4rem;
+    }
+
+    .newCookieButton{
+        margin-top: 3.3rem;
+        width: 17.4rem;
+        height: 5.2rem;
+        cursor: pointer;
+
+        background: var(--bg-button);
+        border: none;
+        border-radius: .4rem;
+
+        font-family: var(--ff-sub-title);
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #fff;
+
+    }
+
+
+/* = = = =  ANIMATIONS  = = = = */
+
+@keyframes cookieScales{
+    to{
+        margin-left: 2rem;
+    }
+    from{
+        margin-left: -2rem;
+    }
+}
+
+@keyframes showMessage{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
